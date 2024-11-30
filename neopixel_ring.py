@@ -20,7 +20,7 @@ ring.write()
 
 """animacja krecenia"""
 """mysle ze trzeba tu dac While ktory zakonczy sie po probie wyslania wiadomosci"""
-"""i dac na poczatku i =+ 1"""
+"""i dac na poczatku i += 1"""
 for i in range(50): #to zmieniasz na w zaleznosci ile ma trwac
     n = i % 15
     for j in range(10):
