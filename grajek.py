@@ -1,8 +1,7 @@
 import os
-from machine import I2S
+from machine import I2S, Pin, SPI
 import sdcard
 import socket
-from machine import Pin, SPI
 
 #======= USER CONFIGURATION =======
 WAV_FILE = 'alarm_beep.wav'
