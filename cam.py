@@ -9,7 +9,7 @@ import socket
 # Konfiguracja GPIO i SD
 BUTTON_PIN = 0  # Przycisk na GPIO0
 LED_PIN = 10    # Wbudowana dioda LED
-SD_CS_PIN = 4   # CS karty SD
+SD_CS_PIN = 21   # CS karty SD
 SERVER_URL = "http://example.com/upload"  
 DELAY_TIME = 5000  
 
@@ -20,9 +20,9 @@ camera_timer = Timer(-1)
 photo_taken = False
 
 
-SPI_MISO = 13
-SPI_MOSI = 11
-SPI_CLK = 12
+SPI_MISO = 8
+SPI_MOSI = 7
+SPI_CLK = 9
 
 spi = SPI(2, baudrate=20000000, sck=Pin(SPI_CLK), mosi=Pin(SPI_MOSI), miso=Pin(SPI_MISO))
 sd = sdcard.SDCard(spi, Pin(SD_CS_PIN))
@@ -130,3 +130,4 @@ button.irq(trigger=Pin.IRQ_FALLING, handler=button_pressed)
 
 print("Gotowy do pracy. Uruchamiam serwer HTTP...")
 start_http_server()
+
