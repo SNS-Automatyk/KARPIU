@@ -7,9 +7,9 @@ import sdcard
 import socket
 
 # Konfiguracja GPIO i SD
-BUTTON_PIN = 0  # Przycisk na GPIO0
+BUTTON_PIN = 1  # Przycisk na GPIO0
 LED_PIN = 10    # Wbudowana dioda LED
-SD_CS_PIN = 21   # CS karty SD
+
 SERVER_URL = "http://example.com/upload"  
 DELAY_TIME = 5000  
 
@@ -20,9 +20,11 @@ camera_timer = Timer(-1)
 photo_taken = False
 
 
+SD_CS_PIN = 21
+
 SPI_MISO = 8
-SPI_MOSI = 7
-SPI_CLK = 9
+SPI_MOSI = 9
+SPI_CLK = 7
 
 spi = SPI(2, baudrate=20000000, sck=Pin(SPI_CLK), mosi=Pin(SPI_MOSI), miso=Pin(SPI_MISO))
 sd = sdcard.SDCard(spi, Pin(SD_CS_PIN))
