@@ -2,14 +2,14 @@ import umail
 import network
 
 #UZUPELNIC DANE
-ssid = ''
-password = ''
+ssid = 'Automatyk'
+password = 'automatyk5n5'
 
 sender_email = 'karpiunator@gmail.com'
-sender_name = 'ESP32' #sender name
+sender_name = 'ESP32'
 sender_app_password = 'iwpemdqmrccpaknw'
-recipient_email ='stone.ruina@gmail.com'
-email_subject ='Test Email'
+recipient_email ='275414@student.pwr.edu.pl'
+email_subject ='Karpiu test'
 
 def connect_wifi(ssid, password):
   station = network.WLAN(network.STA_IF)
@@ -27,6 +27,6 @@ smtp.login(sender_email, sender_app_password)
 smtp.to(recipient_email)
 smtp.write("From:" + sender_name + "<"+ sender_email+">\n")
 smtp.write("Subject:" + email_subject + "\n")
-smtp.write("Hello from ESP32")
+smtp.write("test 123456789 2137 halo halo")
 smtp.send()
 smtp.quit()
