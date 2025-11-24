@@ -12,7 +12,7 @@ import uos
 
 # Konfiguracja sieci i maila
 ssid = "Automatyk"
-password = "automatyk5n5"
+password = #haslo
 
 sender_email = 'karpiunator@gmail.com'
 sender_name = 'ESP32'
