@@ -9,7 +9,7 @@ import uos  # Nowa biblioteka do obsługi systemu plików
 
 # UZUPEŁNIJ DANE
 ssid = "Automatyk"
-password = "automatyk5n5"
+password =
 
 sender_email = 'karpiunator@gmail.com'
 sender_name = 'ESP32'
