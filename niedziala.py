@@ -11,7 +11,7 @@ import network
 import uos 
 # Konfiguracja sieci i maila
 ssid = "Automatyk"
-password = "automatyk5n5"
+password = 
 
 sender_email = 'karpiunator@gmail.com'
 sender_name = 'ESP32'
@@ -236,3 +236,4 @@ def send_simple_email():
         smtp.quit()
     except Exception as e:
         print("Błąd wysyłania e-maila:", e)  # Debugowanie
+
