@@ -12,7 +12,7 @@ from machine import SPI, Pin, Timer
 
 # ----- Configuration -----
 ssid = "Automatyk"
-password = "automatyk5n5"
+password = #wpisz_haslo
 
 sender_email = 'karpiunator@gmail.com'
 sender_name = 'ESP32'
